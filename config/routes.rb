@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   
   get 'gossip/display_gossip'
   get 'gossip/input_gossip'
-  post'/' to: 'gossip#input_gossip'
-  root'home#index'
+   root'home#index'
   
   get '/welcome/:firstname', to: 'welcome#firstname'
   get 'static_page/contact'
